@@ -10,4 +10,3 @@ go to http://dotfiles.eieio.xyz
 - Finder Show Path Bar
 - Trackpad (Three Finger Drag and Tap to Click)
 - Git (config and SSH)
-- Homebrew Install
