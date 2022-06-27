@@ -15,6 +15,7 @@ export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 # Create Aliases
 #---------------------------------
 alias ls='ls -lAFGh'
+alias exa='exa -laFh --git'
 alias ed='$EDITOR $DOTFILES/install.conf.yaml'
 alias ez='$EDITOR $DOTFILES/zshrc'
 alias sz='source $DOTFILES/zshrc'
