@@ -2,11 +2,9 @@ echo 'Hello from .zshrc'
 
 # Set Variables
 #---------------------------------
-# Syntax highlighting of man pages via bat (brew installed)
 export DOTFILES="$HOME/.dotfiles"
 export EDITOR='vim'
-export VISUAL='vim'shrc
-export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export VISUAL='vim'
 
 # Change ZSH Options
 #---------------------------------
@@ -16,6 +14,7 @@ export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 #---------------------------------
 alias ls='ls -lAFGh'
 alias exa='exa -laFh --git'
+alias man='batman'
 alias ed='$EDITOR $DOTFILES/install.conf.yaml'
 alias ez='$EDITOR $DOTFILES/zshrc'
 alias sz='source $DOTFILES/zshrc'
@@ -27,6 +26,7 @@ alias gcam='git commit -am'
 alias gd='git diff'
 alias gp='git push'
 alias gs='git status'
+alias bbd='brew bundle dump --force --describe'
 
 # Customize Prompt(s)
 #---------------------------------
