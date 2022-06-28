@@ -9,6 +9,8 @@ brew "exa"
 brew "git"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
+# Mac App Store command-line interface
+brew "mas"
 # Application launcher and productivity software
 cask "alfred"
 # Client for the Dropbox cloud storage service
@@ -19,3 +21,4 @@ cask "gitkraken"
 cask "google-chrome"
 # Open-source code editor
 cask "visual-studio-code"
+mas "Snappy", id: 512617038
