@@ -28,7 +28,6 @@ alias gd='git diff'
 alias gp='git push'
 alias gs='git status'
 
-
 # Customize Prompt(s)
 #---------------------------------
 PROMPT='%2~ %L %# '
