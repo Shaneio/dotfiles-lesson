@@ -2,7 +2,17 @@
 
 echo '\n<<<Starting Homebrew Setup >>>\n'
 
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+# POSIX equivalent to the which command which is not a builtin
+function exists() {
+  command -v $1 >/dev/null 2>&1
+}
+
+if exists brew; then
+  echo "brew already exists, skipping install"
+else
+  echo "brew doesn't exist, going ahead with install"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
 
 # TODO: Keep an eye out for a different `--no-quarantine` solution.
 # Currently, you can't do `brew bundle --no-quarantine` as an option.
