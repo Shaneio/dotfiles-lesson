@@ -19,3 +19,12 @@ else
   chsh -s '/usr/local/bin/zsh'
 fi
 
+if sh --version | grep -q zsh; then
+  echo '/private/var/select/sh already linked to /bin/zsh'
+else
+  echo "Enter sudo password to symlink sh to zsh"
+  sudo ln -sfv /bin/zsh /private/var/select/sh
+  # At the moment we can only link to shells within /bin
+  # a SIP protected area
+fi
+
