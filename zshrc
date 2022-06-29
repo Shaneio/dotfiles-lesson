@@ -5,6 +5,7 @@ echo 'Hello from .zshrc'
 export DOTFILES="$HOME/.dotfiles"
 export EDITOR='vim'
 export VISUAL='vim'
+export NULLCMD='bat'
 
 # Change ZSH Options
 #---------------------------------
@@ -27,6 +28,7 @@ alias gd='git diff'
 alias gp='git push'
 alias gs='git status'
 alias bbd='brew bundle dump --force --describe'
+alias trail='<<<${(F)path}'
 
 # Customize Prompt(s)
 #---------------------------------
@@ -47,7 +49,6 @@ function mkcd() {
   mkdir -p "$@" && cd "$_";
 }
 
-# Use ZSH Plugins
 #---------------------------------
 
 
