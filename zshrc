@@ -39,12 +39,17 @@ PROMPT='%2~ %L %# '
 
 RPROMPT='%*'
 
-# Add Locations to $PATH Variable
+# Add Locations to $path array
 #---------------------------------
-# Add Visual Studio Code (code)
-export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-export PATH="$N_PREFIX/bin:$PATH"
+# Method below helps remove duplicates when viewing the path in subshells by only showing
+# unique entries.
+typeset -U path
 
+path=(
+  "$N_PREFIX/bin"
+  $path
+  "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+)
 
 # Write Handy Functions
 #---------------------------------
