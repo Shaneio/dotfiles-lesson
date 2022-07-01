@@ -32,4 +32,6 @@ cask "gitkraken"
 cask "google-chrome"
 # Open-source code editor
 cask "visual-studio-code"
+# Binary releases of VS Code without MS branding/telemetry/licensing
+cask "vscodium"
 mas "Snappy", id: 512617038
