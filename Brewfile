@@ -8,6 +8,8 @@ brew "bash"
 brew "bat"
 # Modern replacement for 'ls'
 brew "exa"
+# Infamous electronic fortune-cookie generator
+brew "fortune"
 # Distributed revision control system
 brew "git"
 # User-friendly cURL replacement (command-line HTTP client)
